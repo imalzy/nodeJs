@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "backend-serverJs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imalzy/nodeJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imalzy/nodeJs/issues"
+  },
+  "homepage": "https://github.com/imalzy/nodeJs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,10 +1,8 @@
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer((req, res) => {
-    console.log(req)
-    res.end();
+  res.end();
 });
 
 const PORT = 5000;
-
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
