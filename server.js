@@ -7,12 +7,16 @@ const todo = [
 ];
 
 const server = http.createServer((req, res) => {
+  res.statusCode = 404;
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Powered-By", "DevNodeJs");
-  res.end(JSON.stringify({
-    success : true,
-    data : todo
-  }));
+  res.end(
+    JSON.stringify({
+      success: false,
+      error: "Not Found",
+      data: null,
+    })
+  );
 });
 
 const PORT = 5000;
