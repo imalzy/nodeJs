@@ -7,13 +7,14 @@ const todo = [
 ];
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 404;
-  res.setHeader("Content-Type", "application/json");
-  res.setHeader("X-Powered-By", "DevNodeJs");
+  res.writeHead(400, {
+    "Content-Type": "application/json",
+    "X-Powered-By": "DevNodeJs",
+  });
   res.end(
     JSON.stringify({
       success: false,
-      error: "Not Found",
+      error: "Please add email",
       data: null,
     })
   );
